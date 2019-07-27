@@ -1,0 +1,18 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="ride"
+        android:enabled="true"
+        android:icon="@drawable/qr_ride_now"
+        android:shortcutShortLabel="@string/ride_shortcut_short_label1"
+        android:shortcutLongLabel="@string/ride_shortcut_long_label1"
+        android:shortcutDisabledMessage="@string/ride_disabled_message1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.evazu"
+            android:targetClass="com.evazu.QRCodeActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+    </shortcut>
+    <!-- Specify more shortcuts here. -->
+</shortcuts>

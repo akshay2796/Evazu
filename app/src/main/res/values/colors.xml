@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#dd9a0b</color>
+    <color name="colorPrimaryDark">#103156</color>
+    <color name="colorAccent">#143e6d</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="charcoal">#2f2f2f</color>
+
+    <color name="text_color">#103156</color>
+    <color name="text_color2">#424243</color>
+
+    <color name="yellow_logo">#dd9a0b</color>
+
+    <color name="yellow_signin">#fdb41a</color>
+    <color name="text_color_profile">#515151</color>
+    <color name="error">#ff0009</color>
+    <color name="hint_color">#cde5ff</color>
+
+    <color name="viewfinder_border">#103156</color>
+    <color name="viewfinder_mask">#99000000</color>
+
+</resources>

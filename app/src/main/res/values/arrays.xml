@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="navigation_menu">
+        <item>How To Ride</item>
+        <item>Payments</item>
+        <item>Top Riders</item>
+        <item>Ride History</item>
+        <item>Pay Per Ride</item>
+        <item>Become Partner</item>
+        <item>Help</item>
+    </string-array>
+
+    <string-array name="help_child">
+        <item>FAQ</item>
+        <item>Troubleshoot</item>
+    </string-array>
+
+    <string-array name="faq_questions">
+        <item>What is Evazu?</item>
+        <item>Why Evazu?</item>
+        <item>What are the payment option for Evazu?</item>
+        <item>What is the minimum age to ride Evazu?</item>
+        <item>How much does it cost to ride Evazu?</item>
+        <item>How to unlock Evazu?</item>
+        <item>How to ride?</item>
+        <item>Where does Evazu operate?</item>
+        <item>Should I wear helmet?</item>
+        <item>Where should I park Evazu?</item>
+        <item>At what time you can start your ride?</item>
+        <item>How far can I ride Evazu?</item>
+        <item>What is the minimum balance required to book a scooter?</item>
+        <item>Can I take Evazu in any mode of transport?</item>
+        <item>Can I rent multiple scooter using one account?</item>
+        <item>What should be my speed?</item>
+        <item>Can I take Evazu in the rain?</item>
+        <item>What if you try to dismantal or damage the Evazu in any way?</item>
+        <item>What if someone tries to steal it?</item>
+    </string-array>
+
+    <string-array name="faq_answers">
+        <item>Evazu is an Electronic Scooter sharing company, an eco-friendly and user friendly, this transportation will help you to reach you destination safely without any delay.</item>
+        <item>Evazu can lead  you to your destination in a very short period of time, without any delay and traffic.</item>
+        <item>Paytm, Debit and Credit Cards.</item>
+        <item>The minimum age requirement is 16 and above.</item>
+        <item>Cost will depend as per km ridden and time limit.</item>
+        <item>Switch on the scooter then click on the ride button on your home screen and scan the QR code of your respective scooter.</item>
+        <item>Go through the "HOW TO RIDE" option on your app.</item>
+        <item>Evazu is operated within the radius of 5 km from the respective station.</item>
+        <item>Evazu encourages you to wear a helmet for your own safety.</item>
+        <item>It is compulsory to park Evazu at their respective station.</item>
+        <item>Evazu starts its ride from 8 o\'clock in the  morning till 8 o\'clock in the evening.</item>
+        <item>You can ride a fully charged scooter for 25kms, before it can be used for riding again.</item>
+        <item>Minimum balance require is Rs. 6 for ______kilometer and than depends on time you ride.</item>
+        <item>No, you can\'t take Evazu in any mode of transport.</item>
+        <item>It is mandatory to one have their own device and account in order to rent Evazu.</item>
+        <item>The rider should  not exceed the limit of 25km/hr.</item>
+        <item>In case of any unsuitable conditions of ride, Evazu scooter will automatically switch off.</item>
+        <item>In Evazu there is a dismantal alarm and GPS. In case you try to damage the property, you may be charged with penalty and legal actions will be taken.</item>
+        <item>Evazu is assisted with anti-theft alarm. In case someone will try to pick up the Evazu a continuous alarm will ring after every 5 minutes and location will be traced with the help of GPS.</item>
+    </string-array>
+
+    <string-array name="troubleshoot_questions">
+        <item>Why am I not able to connect?</item>
+        <item>My ride has started, but the scooter is still locked. What should I do?</item>
+        <item>My ride ended, but I\'m still being charged money?</item>
+        <item>Scooter discharged in the middle of the ride?</item>
+        <item>Technical problem in the scooter?</item>
+        <item>There is no space at the station to park scooter?</item>
+        <item>I met with an accident?</item>
+        <item>If alarm is ringing?</item>
+    </string-array>
+
+    <string-array name="troubleshoot_answers" >
+        <item>Close the Evazu app completely and switch on Location and Wifi on your phone. Count to 10 seconds, then open the app.</item>
+        <item>In this case, ask your nearest  parking service person or call on the given contact number.</item>
+        <item>The minumum charges for the ride is Rs. 6. If you are being charged extra money, call on the given contact number.</item>
+        <item>Check the battery status before your ride. If you find yourself in such a situation, find your nearest parking or the call on the given contact number.</item>
+        <item>Call on the given contact number.</item>
+        <item>Ask your parking service person or park near the parking station area.</item>
+        <item>Call an ambulance and contact your nearest parking service person or contact on the given contact number.</item>
+        <item>If the alarm rings, it means that you have not scanned or connected your device to the scooter.</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/scooter_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/scooter_qr"
+        app:layout_constraintBottom_toTopOf="@+id/codeView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <ImageView
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/viewfinder_mask"
+        android:visibility="invisible"/>
+
+    <ToggleButton
+        android:id="@+id/torchBtn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/torch"
+        android:padding="5dp"
+        android:text="@null"
+        android:textOff="@null"
+        android:textOn="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/scan_qr"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/scan_button_bg"
+        android:fontFamily="@font/montserrat"
+        android:text=""
+        android:textColor="@color/black"
+        android:textOff="CODE"
+        android:textOn=""
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/torchBtn"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/codeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/codeBox"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:hint="CODE"
+            android:padding="5dp"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@color/colorPrimaryDark"
+            android:inputType="textCapCharacters|textNoSuggestions"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+            android:background="@android:color/transparent"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/how_to_ride"
+        android:icon="@drawable/how_to_ride_icon"
+        android:title="How To Ride" />
+
+    <item
+        android:id="@+id/payments"
+        android:icon="@drawable/payments"
+        android:title="Payments" />
+    <item
+        android:id="@+id/ride_history"
+        android:icon="@drawable/ride_history"
+        android:title="Ride History" />
+    <item
+        android:id="@+id/pay_per_ride"
+        android:icon="@drawable/pay_per_ride"
+        android:title="Pay Per Ride" />
+    <item
+        android:id="@+id/become_partner"
+        android:icon="@drawable/become_partner"
+        android:title="Become Partner" />
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/help"
+        android:title="Help" />
+    <item
+        android:id="@+id/about_us"
+        android:icon="@drawable/about_us"
+        android:title="About Us" />
+</menu>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Payment">
+
+
+    <TextView
+        android:id="@+id/paytm_not_linked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/error"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="@string/paytm_not_linked"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_payments" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paytm_not_linked">
+
+        <ImageView
+            android:id="@+id/paytm_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/paytm_logo" />
+
+        <TextView
+            android:id="@+id/colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/colon"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/paytm_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Not Linked"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="332dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+            android:src="@drawable/payment_paytm_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Paytm"
+            android:textAllCaps="true"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/paytm_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:background="@android:color/transparent"
+            android:cursorVisible="true"
+            android:fontFamily="@font/montserrat"
+            android:hint="Paytm Mobile Number"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:maxLength="10"
+            android:textColor="@color/text_color"
+            android:textColorHint="#024c97"
+            android:textCursorDrawable="@color/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/paytm_link"
+            android:layout_width="98dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/link_now_bg"
+            android:fontFamily="@font/montserrat"
+            android:text="Link Now"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/paytmNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="105dp"
+            android:fontFamily="@font/montserrat"
+            android:text="9861604926"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/updateNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/update_number_bg"
+        android:text="Update Number"
+        android:textColor="@color/text_color"
+        android:textSize="17sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_payments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow_signin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/back_button"
+        style="@style/ThemeOverlay.AppCompat.Light" >
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Methods"
+            android:textSize="20sp"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+</android.support.constraint.ConstraintLayout>

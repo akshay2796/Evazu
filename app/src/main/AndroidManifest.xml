@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.evazu">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <application
+        android:name=".Evazu"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:maxAspectRatio="2.1"
+        android:screenOrientation="portrait"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".Payment"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ThankYou"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".BecomePartner"
+            android:label="@string/title_activity_become_partner"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Troubleshoot"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.evazu.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fileprovider" />
+        </provider>
+
+        <receiver
+            android:name=".MySMSBroadCastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:maxAspectRatio="2.1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- APP SHORTCUT
+            <meta-data android:name="android.app.shortcuts"
+            android:resource="@xml/shortcuts" />
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".TestActivity"
+            android:maxAspectRatio="2.1"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".SignUpActivity"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:maxAspectRatio="2.1"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".Main2Activity"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".ForgotPassword"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".TermsAndConditions"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWithToolbar" />
+
+        <activity
+            android:name=".StepOneProfile"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".OtpVerify"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ProfilePicture"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".AadhaarCard"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".VerificationSteps"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Permissions"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".Profile"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".QRCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+        <activity
+            android:name=".FAQ"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

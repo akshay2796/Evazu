@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent"
+    android:clickable="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/terms_of_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/terms_of_service"
+        android:textSize="15sp"
+        android:textColor="@color/yellow_signin"/>
+
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/version"
+        android:textSize="15sp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

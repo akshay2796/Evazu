@@ -1,0 +1,168 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/navigationButton"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ride_bg"
+        android:padding="5dp"
+        android:src="@drawable/ic_menu_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileIncompleteTV" />
+
+    <TextView
+        android:id="@+id/search_location"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/search"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/navigationButton"
+        app:layout_constraintEnd_toStartOf="@+id/gift_icon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/navigationButton"
+        app:layout_constraintTop_toTopOf="@+id/navigationButton" />
+
+    <ImageView
+        android:id="@+id/gift_icon"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ride_bg"
+        android:padding="10dp"
+        android:src="@drawable/gift"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileIncompleteTV" />
+
+    <Button
+        android:id="@+id/how_to_ride"
+        android:layout_width="169.50dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/how_to_ride"
+        android:fontFamily="@font/montserrat"
+        android:text="How to ride"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_location" />
+
+
+    <RelativeLayout
+        android:id="@+id/rideLayout"
+        android:layout_width="79.67dp"
+        android:layout_height="79.67dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/ride_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="37.33dp"
+            android:layout_height="49.33dp"
+            android:layout_alignBottom="@+id/rideTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/navigation_arrow" />
+
+
+        <TextView
+            android:id="@+id/rideTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Ride"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/codeTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@color/yellow_signin"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Use Code: EVAZU post unlocking | 1st Ride FREE"
+        android:textColor="@color/text_color"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/profileIncompleteTV"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/error"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Aadhaar Verification Incomplete"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/locationBtn"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="76dp"
+        android:src="@drawable/location_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/rideLayout" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "513354031418",
+    "firebase_url": "https://evazu-904e9.firebaseio.com",
+    "project_id": "evazu-904e9",
+    "storage_bucket": "evazu-904e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513354031418:android:dd0fe51dd6014860",
+        "android_client_info": {
+          "package_name": "com.evazu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513354031418-v9jogvoppp8svf7rheui39u1ogkts57p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.evazu",
+            "certificate_hash": "984b7bcdeb18a24ad5fe07080b5c4ca905b506ac"
+          }
+        },
+        {
+          "client_id": "513354031418-3qc2fle3u9100k72q8b7h2v2rtt3kuju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX1HPS0KFHNx6sx_pNTwgD9qlaXBGuKjM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513354031418-3qc2fle3u9100k72q8b7h2v2rtt3kuju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
